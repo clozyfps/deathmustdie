@@ -1226,6 +1226,18 @@
           {
             "name": "Justice",
             "children": []
+          },
+          {
+            "name": "Soul",
+            "children": []
+          },
+          {
+            "name": "Chaos",
+            "children": []
+          },
+          {
+            "name": "Frost",
+            "children": []
           }
         ]
       },
