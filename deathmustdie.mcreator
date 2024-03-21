@@ -1,0 +1,1320 @@
+{
+  "mod_elements": [
+    {
+      "name": "StarterDeathBiome",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "starter_death_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/deathmustdie/worldgen/biome/starter_death_biome.json"
+        ]
+      },
+      "path": "~/Biomes"
+    },
+    {
+      "name": "DeathRealm",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death_realm",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/deathmustdie/dimension_type/death_realm.json",
+          "src/main/resources/data/deathmustdie/dimension/death_realm.json",
+          "src/main/java/net/mcreator/deathmustdie/world/dimension/DeathRealmDimension.java"
+        ]
+      },
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "DeathRealmPlayerEntersDimension",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death_realm_player_enters_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/DeathRealmPlayerEntersDimensionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dimensions/Procedures"
+    },
+    {
+      "name": "DeathTick",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/DeathTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "DeathMobTick",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death_mob_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/DeathMobTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "DeathMobSpawn",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death_mob_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/DeathMobSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "DeathMobDied",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death_mob_died",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/DeathMobDiedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "TravelOnKeyPressed",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "travel_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/TravelOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds/Procedures"
+    },
+    {
+      "name": "Travel",
+      "type": "keybind",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "travel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/network/TravelMessage.java"
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "HurtCancel",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hurt_cancel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/HurtCancelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "GodCards",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "god_cards",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/client/gui/GodCardsScreen.java",
+          "src/main/java/net/mcreator/deathmustdie/world/inventory/GodCardsMenu.java",
+          "src/main/java/net/mcreator/deathmustdie/network/GodCardsButtonMessage.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "LevelUp",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/LevelUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Card1Display",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "card_1_display",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/Card1DisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Procedures"
+    },
+    {
+      "name": "Card2Display",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "card_2_display",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/Card2DisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Procedures"
+    },
+    {
+      "name": "Card3Display",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "card_3_display",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/Card3DisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Procedures"
+    },
+    {
+      "name": "Card1Randomizer",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "card_1_randomizer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/Card1RandomizerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Card2Randomizer",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "card_2_randomizer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/Card2RandomizerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Card3Randomizer",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "card_3_randomizer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/Card3RandomizerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Card1Clicked",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "card_1_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/Card1ClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/Procedures"
+    },
+    {
+      "name": "Card2Clicked",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "card_2_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/Card2ClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/Procedures"
+    },
+    {
+      "name": "Card3Clicked",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "card_3_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/Card3ClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/Procedures"
+    },
+    {
+      "name": "LightningOrbOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_orb_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/LightningOrbOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "LightningOrbOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_orb_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/LightningOrbOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "LightningOrb",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_orb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/client/renderer/LightningOrbRenderer.java",
+          "src/main/java/net/mcreator/deathmustdie/entity/LightningOrbEntity.java"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "LightningOrbsTick",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_orbs_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/LightningOrbsTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Skills/Lightning"
+    },
+    {
+      "name": "SkillTick",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/SkillTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Skills/Lightning"
+    },
+    {
+      "name": "LightningStrikesTick",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_strikes_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/LightningStrikesTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Skills/Lightning"
+    },
+    {
+      "name": "Dash",
+      "type": "keybind",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/network/DashMessage.java"
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "DashEffectOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_effect_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/DashEffectOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Potions/Procedures"
+    },
+    {
+      "name": "DashEffect",
+      "type": "potioneffect",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/potion/DashEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "DashCooldown",
+      "type": "potioneffect",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_cooldown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/potion/DashCooldownMobEffect.java"
+        ]
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "DashOnKeyPressed",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/DashOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Keybinds/Procedures"
+    },
+    {
+      "name": "DashesCooldown",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dashes_cooldown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/DashesCooldownProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "GodCardsWhileThisGUIIsOpenTick",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "god_cards_while_this_gui_is_open_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/GodCardsWhileThisGUIIsOpenTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/Procedures"
+    },
+    {
+      "name": "InnerPeace",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "inner_peace",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/InnerPeaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills/Justice"
+    },
+    {
+      "name": "Smited",
+      "type": "potioneffect",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smited",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/potion/SmitedMobEffect.java"
+        ]
+      },
+      "path": "~/Potions"
+    },
+    {
+      "name": "SmitedOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smited_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/SmitedOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Potions/Procedures"
+    },
+    {
+      "name": "Reprisal",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reprisal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/ReprisalProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Skills/Justice"
+    },
+    {
+      "name": "DivineShield",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "divine_shield",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/DivineShieldProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills/Justice"
+    },
+    {
+      "name": "MercifulStrike",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "merciful_strike",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/MercifulStrikeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Skills/Justice"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "Wave",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "EnemiesLeft",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "MaxEnemy",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "RandomX",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "RandomZ",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "RandomY",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "EnemiesDeath",
+      "type": "number",
+      "scope": "map",
+      "value": "0.0"
+    },
+    {
+      "name": "Card1",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": ""
+    },
+    {
+      "name": "Card2",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": ""
+    },
+    {
+      "name": "Card3",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": ""
+    },
+    {
+      "name": "GodSelected",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": ""
+    },
+    {
+      "name": "MoveList",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": ""
+    },
+    {
+      "name": "WaveTimer",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "ZombieTimer",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "WitherSkeletonTimer",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "BlazeTimer",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "LightningOrbsTimer",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "LightningStrikesTimer",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "IntervalLevel",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Dashes",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "2.0"
+    },
+    {
+      "name": "SkeletonTimer",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "SlimeTimer",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "VindicatorTimer",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "EndermanTimer",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "RavagerTimer",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "SlimeSpawns",
+      "type": "number",
+      "scope": "map",
+      "value": "25.0"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "bell",
+      "files": [
+        "audio_-_jujutsu_jjk_-_sukuna_malevolent_shrine_activation_-_creator_store"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "kaminari",
+      "files": [
+        "kaminari"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "effect.deathmustdie.dash_cooldown": "DashCooldown",
+      "effect.deathmustdie.smited": "Smited",
+      "biome.deathmustdie.starter_death_biome": "Starter Death Biome",
+      "key.deathmustdie.travel": "Travel",
+      "key.deathmustdie.dash": "Dash",
+      "subtitles.bell": "",
+      "entity.deathmustdie.lightning_orb": "Lightning Orb",
+      "effect.deathmustdie.dash_effect": "Dash",
+      "subtitles.kaminari": ""
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Procedures",
+        "children": []
+      },
+      {
+        "name": "Mobs",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Skills",
+        "children": [
+          {
+            "name": "Lightning",
+            "children": []
+          },
+          {
+            "name": "Justice",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": "Weapons",
+        "children": []
+      },
+      {
+        "name": "GUI",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Overlays",
+        "children": []
+      },
+      {
+        "name": "Keybinds",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Advancements",
+        "children": []
+      },
+      {
+        "name": "Particles",
+        "children": []
+      },
+      {
+        "name": "Potions",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Gamerules",
+        "children": []
+      },
+      {
+        "name": "Biomes",
+        "children": []
+      },
+      {
+        "name": "Dimensions",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Tags",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "deathmustdie",
+    "modName": "deathmustdie",
+    "version": "1.0.0",
+    "author": "jayso, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "modElementsPackage": "net.mcreator.deathmustdie",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}

@@ -1,0 +1,20 @@
+{
+  "_fv": 57,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Smited",
+    "icon": "a2i2e_layer_2.png",
+    "color": {
+      "value": -11222,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": false,
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false,
+    "onActiveTick": {
+      "name": "SmitedOnEffectActiveTick"
+    }
+  }
+}

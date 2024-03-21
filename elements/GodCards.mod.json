@@ -1,0 +1,112 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 15,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_card_1_display",
+          "text": {
+            "fixedValue": "",
+            "name": "Card1Display"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 33,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_card_2_display",
+          "text": {
+            "fixedValue": "",
+            "name": "Card2Display"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 177,
+          "y": 107
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_invisbutton",
+          "image": "invisbutton.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "Card1Clicked"
+          },
+          "x": 24,
+          "y": 107
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_invisbutton1",
+          "image": "invisbutton.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "Card2Clicked"
+          },
+          "x": 168,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_card_3_display",
+          "text": {
+            "fixedValue": "",
+            "name": "Card3Display"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 321,
+          "y": 107
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_invisbutton2",
+          "image": "invisbutton.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "Card3Clicked"
+          },
+          "x": 312,
+          "y": 107
+        }
+      }
+    ],
+    "onTick": {
+      "name": "GodCardsWhileThisGUIIsOpenTick"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

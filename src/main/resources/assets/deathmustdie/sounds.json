@@ -1,0 +1,18 @@
+{
+  "bell": {
+    "sounds": [
+      {
+        "name": "deathmustdie:audio_-_jujutsu_jjk_-_sukuna_malevolent_shrine_activation_-_creator_store",
+        "stream": false
+      }
+    ]
+  },
+  "kaminari": {
+    "sounds": [
+      {
+        "name": "deathmustdie:kaminari",
+        "stream": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "effect.deathmustdie.dash_cooldown": "DashCooldown",
+  "effect.deathmustdie.smited": "Smited",
+  "biome.deathmustdie.starter_death_biome": "Starter Death Biome",
+  "key.deathmustdie.travel": "Travel",
+  "key.deathmustdie.dash": "Dash",
+  "subtitles.bell": "",
+  "entity.deathmustdie.lightning_orb": "Lightning Orb",
+  "effect.deathmustdie.dash_effect": "Dash",
+  "subtitles.kaminari": ""
+}
