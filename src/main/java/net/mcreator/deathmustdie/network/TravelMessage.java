@@ -52,7 +52,7 @@ public class TravelMessage {
 			return;
 		if (type == 0) {
 
-			TravelOnKeyPressedProcedure.execute(entity);
+			TravelOnKeyPressedProcedure.execute(world);
 		}
 	}
 
