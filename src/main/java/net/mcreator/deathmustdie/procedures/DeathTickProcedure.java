@@ -178,8 +178,7 @@ public class DeathTickProcedure {
 									_player.displayClientMessage(Component.literal("\u00A74\u00A7lWAVE 6 EVENT: SLIME RAID"), true);
 							}
 						}
-						SlimeMax = 10 - DeathmustdieModVariables.MapVariables.get(world).Wave * 2;
-						DeathmustdieModVariables.MapVariables.get(world).SlimeTimer = SlimeMax;
+						DeathmustdieModVariables.MapVariables.get(world).SlimeTimer = 10;
 						DeathmustdieModVariables.MapVariables.get(world).syncData(world);
 						DeathmustdieModVariables.MapVariables.get(world).SlimeSpawns = DeathmustdieModVariables.MapVariables.get(world).SlimeSpawns - 1;
 						DeathmustdieModVariables.MapVariables.get(world).syncData(world);
