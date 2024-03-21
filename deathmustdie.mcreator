@@ -253,6 +253,7 @@
     {
       "name": "GodCards",
       "type": "gui",
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "registry_name": "god_cards",
@@ -1009,6 +1010,91 @@
         ]
       },
       "path": "~/Skills/Justice"
+    },
+    {
+      "name": "HeroesGUI",
+      "type": "gui",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heroes_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/world/inventory/HeroesGUIMenu.java",
+          "src/main/java/net/mcreator/deathmustdie/client/gui/HeroesGUIScreen.java",
+          "src/main/java/net/mcreator/deathmustdie/network/HeroesGUIButtonMessage.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "KnightClick",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knight_click",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/KnightClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI/Procedures"
+    },
+    {
+      "name": "HeroesGUIThisGUIIsClosed",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heroes_gui_this_gui_is_closed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/deathmustdie/procedures/HeroesGUIThisGUIIsClosedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/Procedures"
+    },
+    {
+      "name": "AbilityMobs",
+      "type": "tag",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_mobs",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/deathmustdie/tags/entity_types/ability_mobs.json"
+        ]
+      },
+      "path": "~/Tags"
     }
   ],
   "variable_elements": [
@@ -1189,15 +1275,20 @@
   ],
   "language_map": {
     "en_us": {
+      "gui.deathmustdie.heroes_gui.button_knight3": "Orc",
+      "gui.deathmustdie.heroes_gui.button_knight2": "Assassin",
+      "gui.deathmustdie.heroes_gui.button_knight1": "Sorcerer",
+      "key.deathmustdie.travel": "Travel",
+      "key.deathmustdie.dash": "Dash",
+      "gui.deathmustdie.heroes_gui.button_knight4": "Warrior",
+      "entity.deathmustdie.lightning_orb": "Lightning Orb",
+      "effect.deathmustdie.dash_effect": "Dash",
       "effect.deathmustdie.dash_cooldown": "DashCooldown",
       "effect.deathmustdie.smited": "Smited",
       "biome.deathmustdie.starter_death_biome": "Starter Death Biome",
-      "key.deathmustdie.travel": "Travel",
-      "key.deathmustdie.dash": "Dash",
       "subtitles.bell": "",
-      "entity.deathmustdie.lightning_orb": "Lightning Orb",
-      "effect.deathmustdie.dash_effect": "Dash",
-      "subtitles.kaminari": ""
+      "subtitles.kaminari": "",
+      "gui.deathmustdie.heroes_gui.button_knight": "Knight"
     }
   },
   "foldersRoot": {

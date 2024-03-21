@@ -1,0 +1,19 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:LightningOrb"
+      }
+    ],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "ability_mobs",
+    "namespace": "mod"
+  }
+}

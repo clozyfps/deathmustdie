@@ -1,0 +1,88 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 100,
+    "height": 140,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_knight",
+          "text": "Knight",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "KnightClick"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 185,
+          "y": 55
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_knight1",
+          "text": "Sorcerer",
+          "isUndecorated": false,
+          "width": 56,
+          "height": 20,
+          "x": 185,
+          "y": 81
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_knight2",
+          "text": "Assassin",
+          "isUndecorated": false,
+          "width": 56,
+          "height": 20,
+          "x": 185,
+          "y": 110
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_knight3",
+          "text": "Orc",
+          "isUndecorated": false,
+          "width": 56,
+          "height": 20,
+          "x": 185,
+          "y": 137
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_knight4",
+          "text": "Warrior",
+          "isUndecorated": false,
+          "width": 56,
+          "height": 20,
+          "x": 185,
+          "y": 165
+        }
+      }
+    ],
+    "onClosed": {
+      "name": "HeroesGUIThisGUIIsClosed"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

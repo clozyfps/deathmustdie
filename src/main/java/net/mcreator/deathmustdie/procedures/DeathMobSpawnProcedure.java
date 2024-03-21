@@ -8,6 +8,7 @@ import net.minecraftforge.event.entity.EntityJoinLevelEvent;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.TagKey;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
@@ -31,14 +32,16 @@ public class DeathMobSpawnProcedure {
 		if (entity == null)
 			return;
 		if (!(entity instanceof Player)) {
-			if (!((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("deathmustdie:death_realm"))))) {
-				if (!entity.level().isClientSide())
-					entity.discard();
-			} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("deathmustdie:death_realm")))) {
-				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.SQUID_INK, x, y, z, 7, 1, 1, 1, 0.4);
-				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.SOUL, x, y, z, 7, 1, 1, 1, 0.1);
+			if (!entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("deathmustdie:ability_mobs")))) {
+				if (!((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("deathmustdie:death_realm"))))) {
+					if (!entity.level().isClientSide())
+						entity.discard();
+				} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("deathmustdie:death_realm")))) {
+					if (world instanceof ServerLevel _level)
+						_level.sendParticles(ParticleTypes.SQUID_INK, x, y, z, 7, 1, 1, 1, 0.4);
+					if (world instanceof ServerLevel _level)
+						_level.sendParticles(ParticleTypes.SOUL, x, y, z, 7, 1, 1, 1, 0.1);
+				}
 			}
 		}
 	}
